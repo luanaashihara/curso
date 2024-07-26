@@ -2,19 +2,39 @@
 
 /*    color: #248cdcfd;*/
 
-body {
-    color: white;
+html * {
+    box-sizing: border-box;
+}
+
+html, body {
+    color: rgb(16, 2, 64);
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(125,145,228,1) 100%);
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.full-center-center{
+    display: flex;
+    padding: 0 20px;
+    min-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 .container {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 16px;  
+    width: 100%;
+    height: 100%;
+    max-width: 630px;
+    margin: 120px 0;
+    padding: 64px;
+    display: block;
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 8px;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .destaque {
@@ -26,17 +46,25 @@ a.destaque {
 }
 
 .profile {
-    margin-top: 100px;
+    margin-top: 24px;
     margin-bottom: 56px;
 }
 
-.profile__header img {
+.profile__image img{
+    left: 50%;
+    top: -100px;
+    position: absolute;
+    transform: translateX(-50%);
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
     display: block;
     margin: 0 auto 24px auto;
+}
+
+.profile__header, .profile__about {
+    text-align: center;
 }
 
 .profile__header h2 {
@@ -46,9 +74,6 @@ a.destaque {
     margin: 0;
 }
 
-.profile__header, .profile__about {
-    text-align: center;
-}
 
 /*.profile__about div {
     background-color:#248cdcfd;
@@ -57,11 +82,13 @@ a.destaque {
 }*/
 
 .profile__about .destaque {
-    color: white;
+    color: rgb(16, 2, 64);
 }
 
-.links ul {
+.links {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .links a {
@@ -74,15 +101,16 @@ a.destaque {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
-    color: whitesmoke;
+    color: rgb(16, 2, 64);
     font-weight: 600;
     font-size: 18px;
+    
 }
 
 .links a:hover {
     border:solid white 1px;
-    color: rgb(125,145,228);
-    background-color: white;
+    color: whitesmoke;
+    background-color: rgb(16, 2, 64);
 }
 
 .link__item {

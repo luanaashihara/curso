@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <meta name="description" content="Portfólio: Luana Ashihara">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet">
     <!--Meta tags para redes sociais-->
     <meta property="og:title" content="Luana Ashihara"/>
     <meta property="og:type" content="website"/>
@@ -17,34 +20,61 @@
     <meta property="og:url" content="https://luanaashihara.github.io/estudos/"/>
 </head>
 <body>
-    <div class="container">
+    <div class="full-center-center">
+        <div class="container">
+            <!-- Caixa branca -->
+            <div class="profile">
 
-        <!--Seção superior-->
-        <div class="profile">
-            <div class="profile__header">
-                <img src="images/Avatar.jpg" alt="Pessoa com cabelo preto na praia, segurando celular" width="200px">
-                <h1>Luana Ashihara</h1>
-                <h2>Estudante de Engenharia Civil</h2>
-            </div>
-            <div class="profile__about">
-                <div>
-                    <p>Estudante do 5º ano de Engenharial Civil na <span class="destaque">UEM</span>
-                    <br>
-                    Descrição geral do perfil
-                    </p>
+                <!-- Imagem de Perfil -->
+                <div class="profile__image">
+                    <img src="images/Avatar.jpg" alt="Pessoa com cabelo preto na praia, segurando celular" width="200px">
                 </div>
-            </div>
-        </div>
 
-        <!--Seção de links-->
-        <div class="links">
-            <ul>
-                <li><a href="https://instagram.com/luana_ashihara?igshid=MjEwN2IyYWYwYw==" target="_blank"><span class="emoji">&#128420;</span><span class="link__item">Instagram</span> </a> </li>
-                <li><a href="https://www.linkedin.com/in/luana-ashihara-b97826149" target="_blank"><span class="emoji">&#128240;</span><span class="link__item">LinkedIn</span> </a> </li>
-                <li><a href="https://wa.me/5544997473762" target="_blank"><span class="emoji">&#128214;</span><span class="link__item">Contato</span> </a> </li>
-            </ul>
+                <!-- Área de Títulos -->
+                <div class="profile__header">
+                    <h1>Luana Ashihara</h1>
+                    <h2>Estudante de Engenharia Civil</h2>
+                </div>
+                
+                <!-- Área de Descrições -->
+                <div class="profile__about">
+                    <div>
+                        <p>Estudante do 5º ano de Engenharial Civil na <span class="destaque">UEM</span>
+                        <br>
+                        Descrição geral do perfil
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Área de Conteúdo -->
+                <div class="profile__content">
+
+                    <!-- Lista de Links -->
+                    <ul class="links">
+                            <li>
+                                <a href="https://instagram.com/luana_ashihara?igshid=MjEwN2IyYWYwYw==" target="_blank">
+                                    <span><img src="./images/instagram-icon.svg" alt="Logo do Instagram"></span>
+                                    <span class="link__item">Instagram</span> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/luana-ashihara-b97826149" target="_blank">
+                                    <span><img src="./images/linkedin-icon.svg" alt="Logo do LinkedIn"></span>
+                                    <span class="link__item">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/5544997473762" target="_blank">
+                                    <span><img src="./images/user-icon.svg" alt="Ícone de usuário"></span>
+                                    <span class="link__item">Contato</span>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
     </div>
-
 </body>
 </html>
